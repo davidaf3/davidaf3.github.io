@@ -5,7 +5,6 @@ body {
 }
 
 main {
-  flex-grow: 1;
   max-width: 140ch;
   margin: 0 2rem;
   padding-top: 2rem;
@@ -34,7 +33,7 @@ nav {
 
 nav > p {
   text-align: end;
-  font-size: 1.4rem;
+  font-size: 1.25rem;
   margin: 0.25rem;
 }
 
@@ -48,5 +47,15 @@ main > img {
 }
 
 @media only screen and (max-width: 425px) {
+  main {
+    margin: 0 1rem;
+  }
 
+  h1 {
+    font-size: 2rem;
+  }
+
+  nav > p {
+    font-size: 1rem;
+  }
 }
