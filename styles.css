@@ -48,7 +48,8 @@ main > img {
 
 @media only screen and (max-width: 425px) {
   main {
-    margin: 0 1rem;
+    margin: 0;
+    border: none;
   }
 
   h1 {
