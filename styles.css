@@ -64,6 +64,7 @@ footer {
     border-left: none;
     border-right: none;
     padding-top: 1rem;
+    min-height: calc(100vh - 2rem);
   }
 
   h1 {
