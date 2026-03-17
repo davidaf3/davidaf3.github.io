@@ -1,42 +1,47 @@
 body {
   margin: 0;
-  background: #fff;
-  display: flex;
-  justify-content: center;
-}
-
-main {
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  max-width: 140ch;
-  min-height: calc(100vh - 3rem);
-  margin: 0 4rem;
-  padding: 2rem 0 1rem;
-  font-family: "Hanken Grotesk", serif;
+  align-items: center;
+  background-image: url('img/valencia.webp');
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: auto 75vh;
+  font-family: "Hanken Grotesk", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
   color: #000;
-  border: 2px solid black;
-  border-top: none;
-  border-bottom: none;
 }
 
 h1 {
-  font-size: 3.75rem;
+  font-size: 4rem;
   font-weight: 400;
   margin: 0;
-  padding: 0 1rem;
+  padding: 0.5rem 1rem;
+  color: #fff;
 }
 
 nav {
+  display: flex;
+  justify-content: center;
+  width: calc(100% - 2rem);
+  margin-top: 33vh;
   padding: 0.25rem 1rem;
   background: #ff8f00;
   border-top: 2px solid #000;
   border-bottom: 2px dashed #000;
 }
 
-nav > p {
+nav > ul {
+  width: 80ch;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav > ul > li {
   text-align: end;
   font-size: 1.15rem;
   margin: 0.25rem;
@@ -46,31 +51,16 @@ a {
   color: inherit;
 }
 
-main > img {
-  width: 100%;
-  display: block;
-  border-bottom: 2px dashed black;
-}
-
 footer {
   font-size: .85rem;
   text-align: center;
   margin-top: auto;
-  padding-top: 1rem;
+  padding: 1rem 0;
 }
 
 @media only screen and (max-width: 425px) {
-  main {
-    margin: 0;
-    border-left: none;
-    border-right: none;
-    padding-top: 1rem;
-    min-height: calc(100dvh - 2rem);
-  }
-
   h1 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
+    font-size: 2.1rem;
   }
 
   nav > p {
